@@ -1,5 +1,10 @@
 package es.cliente.datautil;
 
+import java.util.Scanner;
+
+import es.datautil.Data;
+import es.datautil.Meses;
+
 public class Principal {
 
 	public static void main(String[] args) {
@@ -24,6 +29,20 @@ public class Principal {
 		   
 		
 	    */ 
+		
+		Scanner lerS = new Scanner(System.in);
+		
+		System.out.println("Indique o número do mês:");
+		int numeroMes = lerS.nextInt();
+		Meses mes = Meses.mesFromInt(numeroMes);
+		if(numeroMes != 2) {
+			System.out.println("O mês tem: " + Data.diasMes(mes));
+		} else {
+			System.out.println("Indique o ano:");
+			int ano = lerS.nextInt();
+			System.out.println("O mês tem: " + Data.diasMes(mes, ano));
+		}
+		
 		
 		
 		
