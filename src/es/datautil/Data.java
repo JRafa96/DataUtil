@@ -1,7 +1,5 @@
 package es.datautil;
 
-import javax.sql.rowset.spi.TransactionalWriter;
-
 public class Data {
 
 	
@@ -61,9 +59,10 @@ public class Data {
 			return 29;
 			} else if (nrMes==2) {
 				return 28;
+			// Se não for Meses.FEVEREIRO, ignora o ano e chama o método diasMes(mes)
 			} else return diasMes(mes);
 		
-		// Se não for Meses.FEVEREIRO, ignora o ano e chama o método diasMes(mes)
+		
 
 	}
 
