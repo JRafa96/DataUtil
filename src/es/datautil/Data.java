@@ -13,7 +13,7 @@ public class Data {
 	{
 		// IMPLEMENTAR
 		// Implemente a lógica a partir do Fluxograma dado em anexo!
-		if((ano % 4 == 0) && !(ano % 100 == 0) || (ano % 400 == 0) && ano % 100==0) {
+		if((ano % 4 == 0) && !(ano % 100 == 0) || (ano % 400 == 0)) {
 			return true;
 		} else return false;
 	}
